@@ -4,53 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP OOP Lesson 1</title>
+    <title>Dad Jokes are us!</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Tilt+Warp&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">    
+
 </head>
 <body>
-    
-<form>
-    <input type="text" name="num1" placeholder="Number 1">
-    <input type="text" name="num2" placeholder="Number 2">
-    <select name="operator">
-        <option>None</option>
-        <option>Add</option>
-        <option>Subtract</option>
-        <option>Multiply</option>
-        <option>Divide</option>
-    </select>
-    <button type="submit" name="submit" value="submit">Calculate</button>
-</form>
-<p>The answer is: </p>
 
-<!-- PHP code starts -->
-<?php
+    <div class="container">        
+        <button id="tellMeADadJoke--btn">Tell me a Dad joke</button>
+        <div class="dad__joke--container">
+            <div id="dad__joke--setup"> 
+                <div class="dad__joke--img">
+                    <img src="http://via.placeholder.com/640x360" alt="#">
+                </div>            
+                <div class="dad__joke--setup">
+                    <p>"Why do Java programmers wear glasses?"</p>
+                </div>
+                <button id="iDontKnow--btn">I don't Know!</button>
+            </div>    
+            <div id="dad__joke--punchline">
+                <p>"Because they don't C#"</p>
+            </div>
+            <button id="reset--btn">Reset Joke!</button>
+        </div>  
+    </div>
 
-if (isset($_GET['submit'])) {
-    $result1 = $_GET['num1'];
-    $result2 = $_GET['num2'];
-    $operator = $_GET['operator'];
-    switch ($operator) {
-        case "None":
-            echo "Please select a method!";
-        break;
-        case "Add":
-            echo $result1 + $result2;
-        break;
-        case "Subtract":
-            echo $result1 - $result2;
-        break;
-        case "Multiply":
-            echo $result1 * $result2;
-        break;
-        case "Divide":
-            echo $result1 / $result2;
-        break;  
-    }
-    
-}
-
-?>
-    
+    <script src="app.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,13 @@
+/* Globel CSS Styling */
+
+.container { height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.dad__joke--container { margin-top: 6rem; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+img { max-width: 350px; }
+#dad__joke--setup, #dad__joke--punchline, #reset--btn { display: none;}
+
+/* Fonts */
+body { background-color: #2F4858; font-family: 'Tilt Warp', cursive; font-size: 2rem; color: #0f4c5c; font-weight: 900; }
+p, button { color: #fff; }
+/* Button */
+
+button { cursor: pointer; border: none; padding: 2rem 4rem; background-color: #F79334; font-size: 3rem; font-family: 'Tilt Warp', cursive;}
